@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Register as a hospital </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bonemarrow.jpeg">
+
+</head>
+
+
+
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="bmd logo">
+    </div>
+
+    <h3 class="stuck"> Stuck on this point? No problem, <br> just get in touch with us: <br> <br>
+        <a href="/Contact" style="text-decoration: none"> Contact Us </a>
+    </h3>
+
+
+    <div class="box">
+
+        <form id="form1" action="/hosp_form" method="post">
+            <h3> Hospital Registration </h3>
+            <label > Userid: </label> <br>
+            <input type="text" name="userid" id="userid" required
+                placeholder="Please enter the unique userid created during the registration on website">
+            <br> <br>
+            <label> Name of the organisation </label> <br>
+            <input type="text" name="noo" id="noo" required
+                placeholder="Please enter the name of the hospital"> <br> <br>
+            <label > ID proof </label>
+            <input type="file" name="idpr" id="idpr" required
+                placeholder="Please upload any valid id proof issued by Government" style="padding-left: 30px;"> <br>
+            <br>
+            <!-- <div>
+                <button class="next-button" id="submit" type="submit"> Submit
+                    <a href="project/Contact.html" style="text-decoration: none; color: red;"> </a>
+                </button>
+            </div> -->
+            <input type="submit" class="next-button" value="submit" name="submit" id="submit" style="text-decoration: none; color: red;" >
+
+        </form>
+
+    </div>
+
+    <script>
+
+        const form1 = document.getElementById("form1");
+        const submit = document.getElementById("submit");
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

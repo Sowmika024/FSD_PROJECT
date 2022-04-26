@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title> BMD Website </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="dcodes/payment_icons/dc_payment_icons.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="text/css" href="icon.png">
+</head>
+
+<body>
+
+  
+    <%- include('navbar'); %>
+    <!-- Donate Money -->
+
+    <div class="cards" style="height:550px; position: relative; top: 80px;">
+        <h3 style="text-align:center"><b>CONFIRM YOUR PAYMENT</b></h3>
+
+        <form action="/donate" method="post" style="margin-left: 20px;">
+            <label>Card Owner Name : </label><br />
+            <input type="text" name="name" id="name" placeholder=" Enter Card Owner Name" required size="100">
+            <br><br>
+            <label>CVV : </label>
+            <input type="text" name="cvv" id="cvv" placeholder="Enter CVV" required size="30" pattern="[0-9]{3}">
+            <p>(format: 3 numbers)</p>
+            <label>Card Number : </label><br />
+            <input type="text" name="card" id="card" placeholder="Enter card number" required size="100"
+                pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
+            <p>(format: 16 numbers with space)</p>
+            <label>Expiry Date : </label>
+            <input type="date" name="date" id="date" required> <br /><br />
+            <label>Amount : </label>
+            <input type="text" name="amt" id="amt" placeholder=" Enter Amount you want to pay" required size="30">
+            <br><br>
+            <span class="dc_payment_icons_glossy_75 dc_visa_glossy" title="Visa"></span>
+            <span class="dc_payment_icons_glossy_75 dc_mastercard_glossy" title="Mastercard"></span><br />
+            <input type="submit" value="complete payment" name="submit" id="submit" style="margin-left:300px"
+                size="100">
+
+        </form>
+
+    </div>
+
+
+    <div class="dm" style="position: relative; top: 80px;">
+        <p style="font-size: 20px;"><br /><b>Your contribution will help us provide more swab kits to donors who are
+                unable to buy a swab kit.</b><br />
+            You can write us a cheque in the name of BMD BMST Foundation India (A/C Payee) and send it to the below
+            address–<br />
+        <p> BMD Foundation India<br />
+            Indian Institute of Information Technology ,Sri City ,<br />
+            Chittoor 630 Gnan Marg, Sri City ,<br />
+            Satyavedu Mandal Chittoor District - 517 646 ,<br />
+            Andhra Pradesh, India.</p>
+    </div>
+
+    <%- include('footer'); %>
+
+</body>
+
+</html>

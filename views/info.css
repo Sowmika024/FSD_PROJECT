@@ -1,0 +1,153 @@
+body{
+    background-color: #fdfdfd;
+    font-family: 'Montserrat', sans-serif;
+    }
+     .btn-registration {
+        background-color: #e2001a;
+        border-color: #e2001a;
+        color: #fff;
+    }
+    
+    .btn-login{
+        background-color: #e2001a;
+        border-color: #e2001a;
+        color: #fff;
+        margin-left:1cm;
+    }
+    .btn{
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        border: 0.2rem solid transparent;
+        border-radius: 6rem;
+        font-size: 18px;
+    }
+    .navbar-nav li{
+        padding:0 15px;
+    }
+    .navbar-nav li a{
+        float:right;
+        text-align: left;
+    }
+    #nav-bar ul li a:hover{
+        color: rgb(236, 16, 16) !important;
+    }
+    .navbar-toggler{
+        border: none !important;
+    }
+    .nav-link{
+        color:#555!important;
+        font-size:18px;
+        color: rgb(17, 15, 15);
+        font-family: Arial;
+        margin-right:0.5cm;
+        width:100%;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left:1cm;
+        margin-top:0.75cm;
+        margin-bottom: 0;
+        list-style: none;
+        height:70px;
+    } 
+    .navbar-nav a{
+        font-size:20px;
+    }
+    .navbar{
+        background-color:rgb(234, 238, 240);
+        
+    }
+
+.cn {
+    float: left;
+    width: 24%;
+    padding: 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  /* .rw {margin: 0 -5px;} */
+  .rw{
+      margin-left: 1cm;
+      margin-bottom:1cm;
+  }
+  
+  /* Clear floats after the cns */
+  .rw:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive cns */
+  @media screen and (max-width: 600px) {
+    .cn {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      
+    }
+  }
+  
+  /* Style the counter cards */
+  .cr {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 0.5cm;
+    
+  }
+  .cr img{
+    width:100%;
+    height:300px;
+}
+.rw h4{
+    font-size:23px;
+    font-family:'Lucida Sans';
+    color: rgb(219, 40, 109);
+}
+.rw p{
+    font-size:22px;
+    font-family:'Cambria';
+}
+h6{
+    font-size:35px;
+    margin-top: 2cm;
+    font-family: 'Times New Roman', Times, serif;
+}
+.fa {
+    padding:  20px;
+    font-size: 30px;
+    width: 50px;
+    margin: 5px 2px;
+
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .hyt{
+    background-color: rgb(240, 233, 233);
+    margin-top:2cm;
+}

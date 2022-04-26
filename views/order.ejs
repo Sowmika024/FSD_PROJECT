@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Track your order</title>
+
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title mx-auto">Order Status<br>AWB Number-5335T5S</h4>
+                </div> <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="progress-track">
+                        <ul id="progressbar">
+                            <li class="step0 active " id="step1">Order placed</li>
+                            <li class="step0 active text-center" id="step2">In Transit</li>
+                            <li class="step0 active text-right" id="step3"><span id="three">Out for Delivery</span></li>
+                            <li class="step0 text-right" id="step4">Delivered</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="details d-table">
+                                <div class="d-table-row">
+                                    <div class="d-table-cell"> Estimated Delivery </div>
+                                    <div class="d-table-cell"> 02/12/2017 </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <link rel="stylesheet"
+                                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <div class="d-table-column"> <a href=#><i class="fa fa-phone" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="d-table-column"> <a href=#><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

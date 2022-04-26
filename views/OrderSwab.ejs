@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=100%, initial-scale=1.0">
+  <title> BMD Website </title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="text/css" href="icon.png">
+  <script defer src="script.js"> </script>
+</head>
+
+<body>
+
+  <%- include('navbar'); %>
+
+<!-- ORDER SWAB -->
+
+	<div class="swab" >
+			<h2 class="head1" >JOIN US!</h2>                
+      <img src="order.png" class="swabimg">
+	</div>
+    <p class="pswab" > <b>ORDER SWAB KIT</b>  </p>
+   <div class="swabform">
+    <form  action="order_swab" method="post" style="width: 200px;" action="/" >
+      <label>Name : </label><br />
+      <input type="text" name="name" id ="name" placeholder="enter your user name" size="100" width="200" ><br ><br >
+      <label>Contact No. : </label><br />
+      <input type="tel" name="contact" id ="contact" placeholder="enter your contact" size="100" required pattern="[0-9]{10}">
+      <small>Format: (10 numbers )</small> <br ><br >
+      <label>Email. : </label><br />
+      <input type="email" name="email" id ="email" placeholder="enter your emial" size="100" required > <br ><br >
+      <label>Address  : </label><br />
+      <input type="text" name="address" id ="address" placeholder="enter your address" size="100" required> <br ><br >
+      <label>City : </label><br />
+      <input type="text" name="city" id ="city" placeholder="enter your city" size="100" required> <br ><br >
+      <label>Pincode : </label><br />
+      <input type="text" name="pincode" id ="pincode" placeholder="enter your pincode" size="100" required> <br ><br >
+      <label>State : </label><br />
+      <input type="text" name="state" id ="state" placeholder="enter your state" size="100" required> <br ><br >
+
+   <br /><input type="submit" value="submit" name="submit" id="submit" style="background-color: rgb(86, 86, 88);margin-left:6cm;">
+
+    </form>
+  </div>
+  <br /><br />
+  <%- include('footer'); %>
+
+</body>
+</html>

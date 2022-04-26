@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=100%, initial-scale=1.0">
+  <title> BMD Website </title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="text/css" href="icon.png">
+</head>
+
+<body>
+
+  <%- include('navbar'); %>
+
+  <div class="sg">
+      <img src="dn.png">
+      <div class="wr">
+          <p class="bf">Register As donor and help the ones in needy!!</p>
+      <a class="btn btn-sm btn-registration " title="register now" href="/donarform">REGISTER NOW</a>
+  </div>
+  </div>
+
+  <!-- <div class="anjali"></div> -->
+
+  <div class="js" style="margin-left: 20px;">
+   <h1>You could be someones <b style="color:rgb(50, 141, 202)">second</b> chance at life.</h1> 
+   <p>4 out of 10 people looking for an unrelated matching donor worldwide are not able to find a match. But you can help us change this
+      Before you can donate your bone morrow get yourselves tested either by ordering swab kits online or through hospitals  </p>
+</div>
+<div class="wrapper">
+    <div class="card">
+        <img src="sw.png">
+        <div class="info">
+          <h4>1.Order swab kit online</h4><br> 
+          <p>Answer simple questions to make sure you’ll be eligible to donate,If it’s a yes, then you’ll be directed to a page where you can request your swab kit online.</p> 
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="ch.png">
+        <div class="info">
+          <h4>2.Swab and then return kit</h4> <br>
+          <p>Swab inside of your cheeks and send swabs back to us. The swabs will then be analyzed in our lab to know your HLA.this is how we match donors and patients.</p> 
+        </div>
+    </div>
+    <div class="card">
+        <img src="reg.png">
+        <div class="info">
+          <h4>3.We'll add you to registry</h4> <br>
+          <p>Once your samples are analyzed,you will be added to registry and you will be available for patients all around the world who are searching for a donor</p> 
+        </div>
+    </div>
+</div>
+
+<div class="fh">
+<h2 >Want to get tested by ordering swab kit online,click on here!!</h2>
+<a class="btn btn-sm btn-swab" title="order swab" href="/OrderSwab">ORDER NOW</a>
+</div>
+
+<div class="ko">
+  <p>Are you living in any remote areas or is it difficult for you to get tested by ordering a swab kit online.DON'T WORRY you can visit your nearby hospitals and get tested.</p>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="crd">
+      <img src="hsp.png">
+      <p>You can visit the hospitals nearby and get tested</p>
+    </div>
+  </div>
+
+  <div class="column" style="margin-left: 10cm;">
+    <div class="crd">
+      <img src="tst.png">
+      <p>After getting your test results upload it in our registry.</p>
+    </div>
+  </div>
+</div>
+<div style="font-size: 24px; color:rgb(40, 48, 122);margin-left:230px;text-decoration:none;" >
+  <a href="/list">click here to know hospitals near your place to go and check your HLA value </a>  
+  </div>
+  
+
+  <div class="jj">
+    <h2 >Click on here to upload your test results</h2>
+    <a class="btn btn-sm btn-test" title="test" href="/ThroughHosp">Submit here</a>
+  </div>
+  <div class="info">
+    <h3> Want to know more on how bone marrow donation is done and need more information regarding perfect match?!</h3>
+    <a href="/info">Know More...</a>
+  </div>
+  <div class="dd">
+    <p>Eager to know where is your order,<b style="color:rgb(224, 32, 32)">Track status</b> of your swab kit here :)</p>
+    <button class="button button1">
+    <a href="/login">Track Order</a>
+  </button>
+  </div><br /><br /><br /><br /><br />
+  <%- include('footer'); %>
+</body>
+</html>
+

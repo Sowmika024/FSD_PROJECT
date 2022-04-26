@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+h3 {
+    padding: 30px;
+    text-align: center;
+}
+
+.box {
+    width: 50%;
+    height: 400px;
+    background-color: #cf9f72b6;
+    position: relative;
+    left: 500px;
+    top: 200px;
+    padding-left: 40px;
+   
+}
+
+
+
+.box input {
+    width:60%;
+    padding: 10px 5px;
+    margin: 5px 0 ;
+    border: 0;
+    outline: none;
+    
+} 
+
+.next-button {
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    outline: none;
+    color: #3f240ab6;
+    cursor: pointer;
+
+}
+
+.back-button {
+    width: 80px;
+    height: 30px;
+    margin: 0 0px 0 75%;
+    border-radius: 30px;
+    outline: none;
+    color: red;
+    cursor: pointer;
+    position: relative;
+    right: 90px;
+    bottom: 30px;
+
+}
+
+#form2 {
+    transition: 5s linear;    
+    
+    display: none;
+}
+
+#form3 {
+    
+    transition: 5s linear;   
+    display: none;
+}
+
+.logo {
+    position: absolute;
+    top: 155px;
+    margin-left: 90px; 
+}
+
+.stuck {
+    position: absolute;
+    top: 300px;
+    margin-left: 30px;
+    
+}
+
+label {
+    color: black
+}
+a {
+    color: black;
+}
+
+#form1 input[type="radio"] {
+     width: 3%; 
+    color: red;
+}
+
+.submit {
+    width: 80px;
+    height: 30px;
+    margin: 0 0px 0 75%;
+    border-radius: 30px;
+    outline: none;
+    color: red;
+    cursor: pointer;
+    
+
+}
+
+select {
+    margin-left: 40px;
+    width: 200px;
+    height: 30px;
+}
+
+
+
+
